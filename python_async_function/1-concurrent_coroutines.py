@@ -15,7 +15,7 @@ if __name__ == "__main__":
     delays = asyncio.run(wait_n(3, 5))
     for data in delays:
         print(data)
-    
+
     print("\nWait max 10 second")
     delays = asyncio.run(wait_n(3, 10))
     for data in delays:
