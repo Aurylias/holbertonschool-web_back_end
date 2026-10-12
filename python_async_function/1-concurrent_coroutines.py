@@ -5,8 +5,8 @@ import asyncio
 wait_random = __import__('0-basic_async_syntax').wait_random
 
 
-async def wait_n(n: int, max_delay: int) -> list[float]:
-    """Calls wait_random n times and store results in a list"""
+async def wait_n(n: int, max_delay: int) -> List[float]:
+    """Calls wait_random n times and store results in a list then order it"""
     delays = await asyncio.gather(*[wait_random(max_delay) for _ in range(n)])
     return sorted(delays)
 
