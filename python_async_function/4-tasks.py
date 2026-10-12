@@ -1,3 +1,4 @@
+#!/usr/bin/env python3
 """Module like the task 1"""
 import asyncio
 from typing import List
